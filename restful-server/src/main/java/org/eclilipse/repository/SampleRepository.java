@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 public class SampleRepository {
 	
 	public Sample getOne(int id){
-		return new Sample(id,"test");
+		return new Sample(id,"test"+id);
 	}
 
 }
