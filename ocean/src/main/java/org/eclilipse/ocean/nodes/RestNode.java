@@ -1,4 +1,4 @@
-package org.eclilipse.ocean;
+package org.eclilipse.ocean.nodes;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,13 +10,13 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-public class RestClient {
-	public RestClient(String requestUrl) {
+public class RestNode {
+	public RestNode(String requestUrl) {
 		super();
 		this.requestUrl = requestUrl;
 	}
 
-	public RestClient(){
+	public RestNode(){
 		
 	}
 
@@ -32,7 +32,7 @@ public class RestClient {
 		response=httpClient.execute(getRequest);
 		BufferedReader br = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
 		while ((line = br.readLine()) != null) {
-			responseStr=responseStr+line+"¥n";
+			responseStr=responseStr+line+"/n";
 		}
 
 		return responseStr;

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: helloworld
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: org.eclilipse
+Build-Jdk: 1.7.0_15
+Built-By: lll
+Created-By: Maven Integration for Eclipse
+

@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rest")
-public class HomeController {
+@RequestMapping("/sample")
+public class SampleController {
 	
 	@Autowired
 	private SampleRepository sampleRepository;
